@@ -26,8 +26,9 @@ Anaconda - Python 3.7
 # Developed By: Shyam Kumar A
 # Register Number: 212221230098
 ```
-```
+
 # Write your code to find the histogram of gray scale image and color image channels.
+```
 import cv2
 import matplotlib.pyplot as plt
 gray_image = cv2.imread("cat.jpg")
@@ -37,11 +38,11 @@ cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+```
 
 
 # Display the histogram of gray scale image and any one channel histogram from color image
-import matplotlib.pyplot as plt 
+```import matplotlib.pyplot as plt 
 grayscale_image=cv2.imread("cat.jpg")
 colourscale_image=cv2.imread("liz.jpg")
 hist=cv2.calcHist(grayscale_image,[0],None,[255],[0,255])
@@ -56,12 +57,12 @@ plt.xlabel("colour scale")
 plt.ylabel("pixel count")
 plt.stem(hist1)
 plt.show()
-
+```
 
 
 
 # Write the code to perform histogram equalization of the image. 
-import cv2
+```import cv2
 import matplotlib.pyplot as plt 
 gi=cv2.imread("cat.jpg",0)
 colorscale=cv2.imread("liz.jpg")
@@ -71,13 +72,8 @@ cv2.imshow("Grey Scale",g)
 cv2.imshow("Equalization",equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-
-
-
-
 ```
+
 ## Output:
 ### Input Grayscale Image and Color Image
 ![o](s1.png)
